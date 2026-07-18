@@ -17,7 +17,10 @@ from routes_messages import messages_bp
 from routes_notifications import notifications_bp
 
 app = Flask(__name__)
-CORS(app)
+# supports_credentials lets the frontend send/receive the auth service's
+# session cookie on cross-origin requests (the frontend is normally
+# opened as a static file or from a different port than this API).
+CORS(app, supports_credentials=True)
 
 app.register_blueprint(users_bp)
 app.register_blueprint(skills_bp)

@@ -80,6 +80,12 @@
         <p class="hint">Reviewed by hand within 24–48 hours. Use this if your school doesn't issue student emails.</p>
       </div>
 
+      <label for="signup-degree">Degree</label>
+      <select id="signup-degree"></select>
+
+      <label for="signup-class-year">Class year</label>
+      <input type="number" id="signup-class-year" placeholder="2027" min="2020" max="2035">
+
       <label for="signup-password">Password</label>
       <input type="password" id="signup-password" placeholder="Create a password" required>
 
@@ -257,6 +263,8 @@
     <h2>Host a group session</h2>
     <label for="gs-topic">Topic</label>
     <input type="text" id="gs-topic" placeholder="e.g. Intro to Watercolor">
+    <label for="gs-category">Category</label>
+    <select id="gs-category"></select>
     <label for="gs-time">Time slot</label>
     <input type="datetime-local" id="gs-time">
     <p class="hint">Max 5 people. You'll be added as the teacher automatically, and a group chat is created when someone joins.</p>

@@ -6,8 +6,9 @@ import db_client
 from db_client import DBServiceError
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, supports_credentials=True)
 app.secret_key = SECRET_KEY
+app.config.update(SESSION_COOKIE_SAMESITE="Lax")
 bcrypt = Bcrypt(app)
 
 
