@@ -12,4 +12,4 @@ DB_SERVICE_URL = os.environ.get("DB_SERVICE_URL", "http://localhost:5002")
 # automatically. Everyone else must go through the manual document
 # review path instead. This is a single domain for now since the pilot
 # only covers one school, and becomes a list once more schools join.
-SCHOOL_EMAIL_DOMAIN = os.environ.get("SCHOOL_EMAIL_DOMAIN", "@anu.ac.rw")
+SCHOOL_EMAIL_DOMAIN = os.environ.get("SCHOOL_EMAIL_DOMAIN", "@alustudent.com")
